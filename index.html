@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Kuy - Resep Masakan Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <div class="logo-icon">🍳</div>
+                Cooking Kuy
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">BERANDA</a></li>
+                <li><a href="#recipes">RESEP</a></li>
+                <li><a href="#about">TENTANG KAMI</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero" id="home">
+            <h1>SELAMAT DATANG DI COOKING KUY!</h1>
+            <p>Cooking Kuy tempat di mana setiap resep bukan sekadar masakan, melainkan kisah yang diolah dengan cinta
+                dan penuh kehangatan. Di sini, kamu akan menemukan berbagai kreasi kuliner dan berbagai daerah, yang
+                siap menginspirasi dan memanjakan lidah di setiap momen spesialmu.</p>
+            <a href="#recipes" class="cta-button">JELAJAHI RESEP</a>
+
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Happy cooking" class="hero-image">
+        </section>
+
+        <section class="search-section">
+            <h2>Cari Resep Favoritmu</h2>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Masukkan nama masakan...">
+                <button class="search-button">Cari</button>
+            </div>
+        </section>
+
+        <section class="featured" id="recipes">
+            <h2 class="section-title">SERING DIKUNJUNGI</h2>
+            <div class="recipe-grid">
+                <div class="recipe-card" onclick="openModal('es-buah')">
+                    <img src="esbuah.jpg" alt="Es Buah" class="recipe-image">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">ES BUAH</h3>
+                        <p class="recipe-description">Rasakan kesegaran alami dalam setiap seruput Es Buah, perpaduan
+                            buah segar dan sirup manis yang sempurna</p>
+                        <div class="recipe-meta">
+                            <span class="recipe-time">DURASI 15 MENIT</span>
+                            <button class="recipe-button">LIHAT RESEP</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="openModal('pecel')">
+                    <img src="pecel.jpg" alt="Pecel" class="recipe-image">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">PECEL</h3>
+                        <p class="recipe-description">Rasakan harmoni rasa tradisional dari Pecel dengan siraman sambal
+                            kacang yang kaya rempah</p>
+                        <div class="recipe-meta">
+                            <span class="recipe-time">DURASI 30-40 MENIT</span>
+                            <button class="recipe-button">LIHAT RESEP</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="openModal('TAHUTEK')">
+                    <img src="tahu tek.jpg" alt="tahutek" class="recipe-image">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">TAHUTEK</h3>
+                        <p class="recipe-description">Rasakan kelezatan otentik Tahu Tek, paduan tahu goreng, lontong,
+                            dan sayuran segar yang disiram sambal kacang petis pedas manis</p>
+                        <div class="recipe-meta">
+                            <span class="recipe-time">DURASI 20 MENIT</span>
+                            <button class="recipe-button">LIHAT RESEP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <h2 class="section-title">TENTANG KAMI</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="about-icon">🍳</div>
+                        <h3>Misi Kami</h3>
+                        <p>Cooking Kuy hadir untuk membantu setiap orang menemukan kebahagiaan melalui memasak. Kami
+                            percaya bahwa setiap hidangan yang dibuat dengan cinta akan menciptakan kenangan indah
+                            bersama keluarga dan teman-teman tercinta.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">❤</div>
+                        <h3>Filosofi Kami</h3>
+                        <p>Masakan bukan hanya tentang rasa, tetapi tentang cerita, tradisi, dan kasih sayang yang kita
+                            tuangkan dalam setiap proses memasak. Di Cooking Kuy, kami menghadirkan resep-resep autentik
+                            dengan sentuhan modern yang mudah dipraktikkan di rumah.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">🌟</div>
+                        <h3>Visi Kami</h3>
+                        <p>Menjadi platform kuliner terdepan yang menginspirasi jutaan keluarga Indonesia untuk
+                            menciptakan momen kebersamaan melalui masakan rumahan yang lezat dan bergizi. Kami
+                            berkomitmen melestarikan kekayaan kuliner Nusantara untuk generasi mendatang.</p>
+                    </div>
+                </div>
+
+                <div class="team-section">
+                    <h3>Tim Cooking Kuy</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-avatar">👨‍🍳</div>
+                            <h4>RAPIPO</h4>
+                            <p>Head Chef & Co-Founder</p>
+                            <span>15+ tahun pengalaman kuliner</span>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-avatar">👩‍🍳</div>
+                            <h4>Chef A(seva)</h4>
+                            <p>Recipe Developer</p>
+                            <span>Spesialis masakan tradisional</span>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-avatar">📱</div>
+                            <h4>ezar</h4>
+                            <p>Tech Lead</p>
+                            <span>Menghadirkan teknologi untuk kuliner</span>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-avatar">📝</div>
+                            <h4>islo</h4>
+                            <p>Content Creator</p>
+                            <span>Storyteller makanan Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-section">
+                    <div class="stat-item">
+                        <div class="stat-number">1+</div>
+                        <div class="stat-label">Resep Tersedia</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1 JT+</div>
+                        <div class="stat-label">Pengguna Aktif</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1+</div>
+                        <div class="stat-label">Daerah Asal Resep</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.9⭐</div>
+                        <div class="stat-label">Rating Pengguna</div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Hubungi Kami</h3>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <strong>Email</strong>
+                                <p>cookingkuy@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <p>+62 123-456-789</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>Alamat</strong>
+                                <p>Surabaya, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <strong>Jam Operasional</strong>
+                                <p>Senin - Jumat: 09:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="es-buah" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="esbuah.jpg" alt="Es Buah" class="modal-image">
+            <h2>ES BUAH</h2>
+            <p><strong>Waktu Persiapan:</strong> 15 menit</p>
+            <div class="ingredients">
+                <h3>Bahan-bahan:</h3>
+                <ul>
+                    <li>2 buah apel, potong dadu</li>
+                    <li>1 buah pir, potong dadu</li>
+                    <li>100g anggur, belah dua</li>
+                    <li>2 buah jeruk, ambil dagingnya</li>
+                    <li>100ml sirup merah</li>
+                    <li>100ml susu kental manis</li>
+                    <li>Es batu secukupnya</li>
+                    <li>Air matang 500ml</li>
+                </ul>
+            </div>
+            <div class="ingredients">
+                <h3>Cara Membuat:</h3>
+                <ol>
+                    <li>Cuci bersih semua buah, lalu potong-potong sesuai selera</li>
+                    <li>Campurkan semua buah dalam mangkuk besar</li>
+                    <li>Dalam gelas terpisah, campur sirup merah, susu kental manis, dan sedikit air</li>
+                    <li>Tuang campuran sirup ke atas buah, aduk rata</li>
+                    <li>Tambahkan es batu secukupnya</li>
+                    <li>Sajikan dalam gelas tinggi, hiasi dengan daun mint jika ada</li>
+                    <li><strong>Tips:</strong> Gunakan buah yang segar dan manis untuk hasil terbaik!</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="pecel" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="pecel.jpg" alt="Pecel" class="modal-image">
+            <h2>PECEL</h2>
+            <p><strong>Waktu Persiapan:</strong> 30-40 menit</p>
+            <div class="ingredients">
+                <h3>Bahan Sayuran:</h3>
+                <ul>
+                    <li>100g bayam, rebus</li>
+                    <li>100g kangkung, rebus</li>
+                    <li>100g kacang panjang, rebus</li>
+                    <li>100g tauge, rebus sebentar</li>
+                    <li>2 buah tempe, goreng</li>
+                    <li>Kerupuk secukupnya</li>
+                </ul>
+            </div>
+            <div class="ingredients">
+                <h3>Bumbu Pecel:</h3>
+                <ul>
+                    <li>200g kacang tanah sangrai</li>
+                    <li>5 cabai rawit</li>
+                    <li>2 siung bawang putih</li>
+                    <li>1 sdt garam</li>
+                    <li>1 sdt gula merah</li>
+                    <li>Air asam jawa secukupnya</li>
+                </ul>
+            </div>
+            <div class="ingredients">
+                <h3>Cara Membuat:</h3>
+                <ol>
+                    <li><strong>Persiapan Sayuran:</strong> Rebus semua sayuran satu per satu hingga matang tapi masih
+                        renyah. Tiriskan dan sisihkan.</li>
+                    <li><strong>Membuat Bumbu:</strong> Goreng kacang tanah hingga matang, dinginkan lalu haluskan
+                        bersama cabai, bawang putih, garam, dan gula merah.</li>
+                    <li><strong>Mencampur Bumbu:</strong> Tambahkan air asam jawa sedikit demi sedikit sambil diaduk
+                        hingga bumbu menjadi pasta yang kental.</li>
+                    <li><strong>Penyajian:</strong> Tata sayuran rebus di piring, siram dengan bumbu pecel.</li>
+                    <li><strong>Pelengkap:</strong> Tambahkan tempe goreng dan kerupuk sebagai pelengkap.</li>
+                    <li><strong>Tips:</strong> Bumbu pecel bisa dibuat lebih asin atau manis sesuai selera. Sajikan
+                        segera setelah disiram bumbu agar sayuran tetap segar.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="TAHUTEK" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="tahu tek.jpg" alt="TAHU TEK" class="modal-image">
+            <h2>TAHUTEK</h2>
+            <p><strong>Waktu Persiapan:</strong> 25 menit</p>
+            <div class="ingredients">
+                <h3>Bahan-bahan:</h3>
+                <ul>
+                    <li>100g tahu, goreng</li>
+                    <li>100g tempe, goreng</li>
+                    <li>2 butir telur rebus</li>
+                    <li>100g kentang rebus</li>
+                    <li>100g kacang panjang rebus</li>
+                    <li>100g tauge rebus</li>
+                    <li>Selada secukupnya</li>
+                    <li>Kerupuk untuk pelengkap</li>
+                </ul>
+            </div>
+            <div class="ingredients">
+                <h3>Bumbu Kacang:</h3>
+                <ul>
+                    <li>200g kacang tanah goreng</li>
+                    <li>3 cabai rawit</li>
+                    <li>2 siung bawang putih</li>
+                    <li>1 sdt garam</li>
+                    <li>2 sdm gula jawa</li>
+                    <li>1 sdt terasi bakar</li>
+                    <li>Air matang secukupnya</li>
+                </ul>
+            </div>
+            <div class="ingredients">
+                <h3>Cara Membuat:</h3>
+                <ol>
+                    <li><strong>Persiapan Bahan:</strong> Goreng tahu dan tempe hingga kecokelatan, rebus telur dan
+                        kentang hingga matang.</li>
+                    <li><strong>Rebus Sayuran:</strong> Rebus kacang panjang dan tauge sebentar agar tetap renyah,
+                        tiriskan.</li>
+                    <li><strong>Membuat Bumbu Kacang:</strong> Haluskan kacang tanah goreng, cabai rawit, bawang putih,
+                        garam, gula jawa, dan terasi.</li>
+                    <li><strong>Mengencerkan Bumbu:</strong> Tambahkan air matang sedikit demi sedikit sambil diaduk
+                        hingga kekentalan sesuai selera.</li>
+                    <li><strong>Penyajian:</strong> Tata semua bahan (tahu, tempe, telur, kentang, sayuran, selada) di
+                        piring.</li>
+                    <li><strong>Finalisasi:</strong> Siram dengan bumbu kacang, taburi kerupuk yang sudah diremah.</li>
+                    <li><strong>Tips:</strong> Bumbu kacang sebaiknya tidak terlalu encer agar menempel sempurna pada
+                        sayuran. Sajikan segera setelah disiram bumbu!</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <div class="logo-icon">🍳</div>
+                    Cooking Kuy
+                </div>
+                <p>&copy; 2024 Cooking Kuy. Semua hak cipta dilindungi.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook">📘</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="TikTok">🎵</a>
+                    <a href="#" title="YouTube">📺</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
